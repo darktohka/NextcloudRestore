@@ -1,6 +1,6 @@
 from PyQt5.QtCore import Qt, QUrl, QThread, pyqtSignal
 from PyQt5.QtGui import QPalette, QFont, QColor, QPixmap
-from PyQt5.QtWidgets import QVBoxLayout, QHBoxLayout, QWidget, QLabel, QPushButton, QLineEdit, QSizePolicy, QTabWidget, QListWidget
+from PyQt5.QtWidgets import QVBoxLayout, QHBoxLayout, QWidget, QLabel, QPushButton, QLineEdit, QSizePolicy, QTabWidget, QListWidget, QMenuBar
 from PyQt5.QtWebEngineWidgets import QWebEnginePage, QWebEngineView,QWebEngineSettings, QWebEngineProfile
 from .TritonWidget import TritonWidget, ImageButton
 from . import Globals
@@ -47,7 +47,7 @@ class ManifestTab(QWidget):
         self.folder = folder
         self.files = files
         self.layout = QVBoxLayout()
-        self.layout.setContentsMargins(20, 20, 20, 20)
+        self.layout.setContentsMargins(0, 0, 0, 0)
 
         self.listBox = QListWidget()
 
@@ -67,13 +67,16 @@ class ManifestWidget(TritonWidget):
     def __init__(self, base, drive):
         TritonWidget.__init__(self, base)
         self.drive = drive
-        
+
         self.setWindowTitle('NextcloudRestore')
         self.setBackgroundColor(self, Qt.white)
 
         self.layout = QVBoxLayout()
-        self.layout.setContentsMargins(20, 20, 20, 20)
+        self.layout.setContentsMargins(0, 0, 0, 0)
         
+        self.menuBar = QMenuBar()
+        fileMenu = self.menuBar.addMenu('File')
+
         self.label = QLabel('Searching for manifests...')
         self.label.setAlignment(Qt.AlignCenter)
         self.label.setFont(QFont('Sans Serif', 20))
@@ -84,6 +87,7 @@ class ManifestWidget(TritonWidget):
         self.tabs.hide()
 
         self.layout.setAlignment(Qt.AlignCenter)
+        self.layout.addWidget(self.menuBar)
         self.layout.addWidget(self.label)
         self.layout.addWidget(self.tabs)
         self.setLayout(self.layout)
