@@ -1,0 +1,17 @@
+{
+  "connection": {
+    "access_token": {
+      "access_token": "EwCAA8l6BAAUO9chh8cJscQLmU+LSWpbnr0vmwwAAa56sbLIE6eADyY3GD1GBl5McjLspTVwYcAkYVZ+kGgw9ky9DREfzJFiEn+QvRKoJDLuw8+IBFPbZk5EpH40D47R2F+zpxHwm3jnFSNgqhgcwwOYkYIYKuG8wUlYCFCUo7rX2yEzT+dirHzvC/8XGTsqsW6f9LxXremmYxQjhGsOEdkV6/ZqYbX9R3ncxVZMzbJ/rsFHALTje+NWRho9XqJsgRMvJeplEVQ0HG0pZ45WG3THx/yxY4QJT7sMggIaNznC6onu4j5zo5webPvWHmv2LvkLntayGlNqeQreGKOWSeFVsIkV84VAZXs4c/V2ABQDdKWT/MUuNFRo/OjIAgsDZgAACBFucdXMJgpxUAKTteAHXxXL/hiPEwfNqHjtpRls5yTdVxmTMc4ki2K4wqR6i0kh2BLtqC+7rkqdN3Ta3pVZP6+ekl9N4RmsYOuJxM8Uepbjm0XEhPTL269jsH4iG2uOxXKDW4A6FhheHSr5uX3uPs0bdnsB4D5kPuZkV/ViarBesRJNbjHwwwNIE4ezHim//Jqdko/QZ+GYGK4yiDO0bAZwMN9AOudJA+7zMjls/ERzqLaRTYb5DtNQRRcY5efiLFuso1lcMseIE3Jtc9hNGnatsTf87/xT2NB2SfugTWN0zqZYATUP1Cs0/BjlxFoWw6r/WxamYwxx79GjRANQH/ydfuMCQALHo4HMFOH949JCzRuGZdDNUHWNcj8FVRYZ5zLfCbLUUjo5FQkoMetNwpwBBSqLs8/+WBRDWvN67qW6ttTVi3fcBZEW3/iS0Il0yUp6UXcD8xBzQIPRxaun/uAiGWy6leaE+rJApb6OY7nW285VfF0Bl23rlQ4RgJRIvmBnB1MhL4rVXmlbYYGIY/fhsekE+G1NX9OMm6eCzoiGAFIuc4iFvh5mUmDGPjYO8ft4I20/bfEEyIeQ9VYCktXZAzzGD5LpXxLa9FJWnB2kbh6AYC1WJb7a2noAH/XsVL0Z8pxlSxyShYv5MA5jERi439WCaPQWbTkHUoY94fslL/EU3vXC6FG74dyPZFX6iqcmYyTVT++Is+E2RKvHPZ3ystRehwhdFdm1B4TnVhRG0QEqWQj1Nx8o2lCHUtanCiwmPjBE12TIqO67yTKQ8kNf5mFaTajG1IIjgAI=",
+      "expires_at": 1581593512.6159372,
+      "expires_in": 3600,
+      "ext_expires_in": 3600,
+      "scope": [
+        "Files.ReadWrite.All",
+        "User.Read",
+        "Files.Read.All"
+      ],
+      "token_type": "Bearer"
+    },
+    "type": "onedrive"
+  }
+}

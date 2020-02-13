@@ -189,12 +189,9 @@ class OneDrive(object):
             folder = folder_path[folder_path.index(':')+1:folder_path.index(folder_name)-1]
 
             if folder not in folders:
-                folders[folder] = []
+                folders[folder] = {}
 
-            folders[folder].append({'name': name, 'link': file['@microsoft.graph.downloadUrl']})
-
-        for folder in folders.keys():
-            folders[folder].sort(key=lambda file: file['name'], reverse=True)
+            folders[folder][name] = {'link': file['@microsoft.graph.downloadUrl']}
 
         return folders
 
